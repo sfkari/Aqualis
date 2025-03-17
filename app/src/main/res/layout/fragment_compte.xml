@@ -1,0 +1,132 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="16dp"
+    tools:context=".CompteFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/backButton"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                app:srcCompat="@drawable/ic_back"
+                android:contentDescription="Retour"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mon compte"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <ImageView
+                android:id="@+id/editButton"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                app:srcCompat="@drawable/edit"
+                android:contentDescription="Modifier"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Profile Image with Shadow -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="60dp"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/profile"
+                android:layout_margin="20dp"
+                android:contentDescription="Photo de profil"
+                app:tint="@color/bleu" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Emma Ashley"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+        <!-- Profile Details -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+
+            <View style="@style/ProfileDivider"/>
+
+            <!-- First Name -->
+            <TextView android:text="Prénom" style="@style/ProfileLabel"/>
+            <TextView android:id="@+id/first_name" android:text="Emma" style="@style/ProfileValue"/>
+            <View style="@style/ProfileDivider"/>
+
+            <!-- Last Name -->
+            <TextView android:text="Nom" style="@style/ProfileLabel"/>
+            <TextView android:id="@+id/last_name" android:text="Ashley" style="@style/ProfileValue"/>
+            <View style="@style/ProfileDivider"/>
+
+            <!-- Gender -->
+            <TextView android:text="Genre" style="@style/ProfileLabel"/>
+            <TextView android:id="@+id/gender" android:text="Féminin" style="@style/ProfileValue"/>
+            <View style="@style/ProfileDivider"/>
+
+            <!-- Date of Birth -->
+            <TextView android:text="Date de naissance" style="@style/ProfileLabel"/>
+            <TextView android:id="@+id/dob" android:text="20-12-1990" style="@style/ProfileValue"/>
+            <View style="@style/ProfileDivider"/>
+
+            <!-- Weight -->
+            <TextView android:text="Poids" style="@style/ProfileLabel"/>
+            <TextView android:id="@+id/weight" android:text="55 kg" style="@style/ProfileValue"/>
+            <View style="@style/ProfileDivider"/>
+
+            <!-- Height -->
+            <TextView android:text="Taille" style="@style/ProfileLabel"/>
+            <TextView android:id="@+id/height" android:text="170 cm" style="@style/ProfileValue"/>
+            <View style="@style/ProfileDivider"/>
+
+            <Button
+                android:id="@+id/sign_out_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Déconnexion"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:elevation="2dp"
+                android:backgroundTint="@color/vert"
+                android:drawableEnd="@drawable/logout"
+                android:layout_margin="20dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

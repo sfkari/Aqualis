@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "632383697004",
+    "project_id": "aqualis-b84fa",
+    "storage_bucket": "aqualis-b84fa.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:632383697004:android:009680603bb9b361f0a849",
+        "android_client_info": {
+          "package_name": "com.cmc.aqualis"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCE8cp-2Z2z4CmmxLtiPgQ7g-KP_F2c0hc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

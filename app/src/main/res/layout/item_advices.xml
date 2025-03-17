@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/lubrication"
+        android:contentDescription="Advice Icon" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingStart="16dp">
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aide à convertir la nourriture en énergie"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:justificationMode="inter_word"/>
+
+        <TextView
+            android:id="@+id/descriptionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="L’eau permet au corps de réguler sa température grâce à la transpiration. Buvez davantage en cas de chaleur ou d’activité physique pour éviter la surchauffe du corps."
+            android:textSize="12sp"
+            android:layout_marginTop="5dp"
+            android:lineSpacingExtra="4dp"
+            android:justificationMode="inter_word"
+            android:textColor="@color/gris"/>
+
+    </LinearLayout>
+</LinearLayout>

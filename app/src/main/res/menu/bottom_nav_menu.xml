@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/tableauDeBord"
+        android:icon="@drawable/home"
+        android:title="Acceuil" />
+
+    <item
+        android:id="@+id/objectifs"
+        android:icon="@drawable/chart"
+        android:title="Tableau De Bord" />
+
+    <item
+        android:id="@+id/conseils"
+        android:icon="@drawable/danger_circle"
+        android:title="Conseils" />
+
+    <item
+        android:id="@+id/compte"
+        android:icon="@drawable/profile"
+        android:title="Profile" />
+
+</menu>

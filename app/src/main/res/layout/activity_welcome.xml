@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="@color/white"
+    tools:context=".WelcomeActivity">
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bienvenue sur"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@color/bleu"
+        android:gravity="center"/>
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logoo"
+        android:layout_marginVertical="40dp"/>
+
+    <!-- Bouton de connexion -->
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/bleu"
+        android:text="Se connecter"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Bouton d'inscription -->
+    <Button
+        android:id="@+id/signupButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/bleuClair"
+        android:text="S'inscrire"
+        android:textColor="@color/bleu"
+        android:textSize="16sp"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Texte 'ou continuer avec' -->
+    <TextView
+        android:id="@+id/continueText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ou continuer avec"
+        android:textSize="14sp"
+        android:textColor="#888888"
+        android:gravity="center"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/googleButton"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Se connecter avec Google"
+        android:textColor="@color/bleu"
+        android:drawableLeft="@drawable/ic_google"
+        android:gravity="center"
+        app:cornerRadius="50dp"
+        app:strokeColor="@color/bleu"
+        app:strokeWidth="1dp" />
+</LinearLayout>
